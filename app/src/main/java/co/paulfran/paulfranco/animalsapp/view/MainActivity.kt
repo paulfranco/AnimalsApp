@@ -1,7 +1,8 @@
-package co.paulfran.paulfranco.animalsapp
+package co.paulfran.paulfranco.animalsapp.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import co.paulfran.paulfranco.animalsapp.R
 
 class MainActivity : AppCompatActivity() {
 
