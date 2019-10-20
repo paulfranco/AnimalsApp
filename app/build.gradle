@@ -17,6 +17,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -73,6 +74,10 @@ dependencies {
     testImplementation "org.mockito:mockito-inline:$mockitoVersion"
     testImplementation "android.arch.core:core-testing:1.1.1"
     kaptTest "com.google.dagger:dagger-compiler:$daggerVersion"
+
+    implementation 'com.google.android.gms:play-services-ads:17.2.0'
+
+    implementation 'com.android.support:multidex:1.0.3'
 
 
     testImplementation 'junit:junit:4.12'

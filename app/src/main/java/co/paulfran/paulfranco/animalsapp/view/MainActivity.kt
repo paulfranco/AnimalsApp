@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         // Back Button step 2
         navController = Navigation.findNavController(this, R.id.fragment)
         NavigationUI.setupActionBarWithNavController(this, navController)
+
     }
 
     // Back Button step 3

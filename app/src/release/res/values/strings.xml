@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AnimalsApp</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="banner_ad_id">ca-app-pub-8890649956624524/7668545763</string>
+    <string name="interstitial_ad_id">ca-app-pub-8890649956624524/8909954175</string>
+</resources>
