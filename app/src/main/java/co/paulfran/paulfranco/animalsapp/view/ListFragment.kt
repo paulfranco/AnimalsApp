@@ -14,11 +14,18 @@ import co.paulfran.paulfranco.animalsapp.R
 import co.paulfran.paulfranco.animalsapp.model.Animal
 import co.paulfran.paulfranco.animalsapp.viewmodel.ListViewModel
 import kotlinx.android.synthetic.main.fragment_list.*
+import com.google.android.gms.ads.MobileAds
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdSize
+
 
 /**
  * A simple [Fragment] subclass.
  */
 class ListFragment : Fragment() {
+
+    private lateinit var adView: AdView
 
     private lateinit var viewModel: ListViewModel
     private val listAdapter = AnimalListAdapter(arrayListOf())
@@ -48,11 +55,16 @@ class ListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_list, container, false)
+        return inflater.inflate(co.paulfran.paulfranco.animalsapp.R.layout.fragment_list, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        adView =  view.findViewById<View>(co.paulfran.paulfranco.animalsapp.R.id.adView) as AdView
+        val adRequest = AdRequest.Builder().build()
+        adView.loadAd(adRequest)
+
 
         viewModel = ViewModelProviders.of(this).get(ListViewModel::class.java)
 
