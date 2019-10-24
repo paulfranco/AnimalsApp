@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(co.paulfran.paulfranco.animalsapp.R.layout.activity_main)
 
         AppCenter.start(
-            application, "48296c14-731d-46ec-9d5d-24a668f7417d",
+            application, "ade989c9-fd94-45cd-837a-11adf5e26374",
             Analytics::class.java, Crashes::class.java
         )
 
