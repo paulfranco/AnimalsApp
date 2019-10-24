@@ -55,6 +55,5 @@
             android:layout_margin="4dp"
             android:text="@{animal.diet}" />
 
-
     </LinearLayout>
 </layout>

@@ -11,13 +11,12 @@
             type="co.paulfran.paulfranco.animalsapp.view.AnimalClickListener" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
-
         android:id="@+id/animalLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="@{listener::onClick}"
-        android:tag="@{animal.name}"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:tag="@{animal.name}">
 
         <ImageView
             android:id="@+id/animalImage"
